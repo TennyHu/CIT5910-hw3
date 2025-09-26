@@ -13,13 +13,16 @@ public class Needle {
         int hits = 0;
         for (int i = 0; i < totalDrops; i++) {
             double alpha = generator.nextDouble() * 180;
+            double alphaRadian = alpha * Math.PI / 180;
             double y_low = generator.nextDouble() * 2;
-            double y_high = y_low + Math.sin(alpha);
+            double y_high = y_low + Math.sin(alphaRadian);
             if (y_high >= 2) {
                 hits++;
             }
         }
-        return totalDrops / hits;
+        System.out.println(hits);
+        return (double)totalDrops / hits;
+
     }
 }
 
