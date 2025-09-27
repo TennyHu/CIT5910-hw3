@@ -4,7 +4,7 @@ public class Main {
 //        Needle nd = new Needle();
 //        System.out.println(nd.runExperiment(594));
 
-        CoatExperimentSimulator c = new CoatExperimentSimulator(20);
+        CoatExperimentSimulator c = new CoatExperimentSimulator(30);
         int numberOfPeople = c.getNumberOfPeople();
 
 //        int[] trials = RandomOrderGenerator.getRandomOrder(numberOfPeople);
@@ -18,5 +18,6 @@ public class Main {
             System.out.println("This is trial no. " + i + " with this number of people having right coat: " + result[i]);
         }
         System.out.println("The probability of 0 people getting back: " + c.answerToQuestionOne(result));
+        System.out.println("The ave number of people getting back: " + c.answerToQuestionTwo(result));
     }
 }

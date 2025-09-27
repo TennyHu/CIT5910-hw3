@@ -55,11 +55,18 @@ public class CoatExperimentSimulator {
                 zeroCount++;
             }
         }
-        return zeroCount / (double)results.length;
+        return zeroCount / (double) results.length;
     }
 
+    /*
+    Method: given the results array, compute the average number of coats returned per trial
+     */
     public double answerToQuestionTwo(int[] results) {
-        return 0.0;
+        double sum = 0.0;
+        for (int i = 0; i < results.length; i++) {
+            sum += results[i];
+        }
+        return sum / (double) results.length;
     }
 
 
