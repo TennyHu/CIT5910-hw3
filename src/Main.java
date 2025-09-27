@@ -17,5 +17,6 @@ public class Main {
         for (int i = 0; i < numberOfPeople; i++) {
             System.out.println("This is trial no. " + i + " with this number of people having right coat: " + result[i]);
         }
+        System.out.println("The probability of 0 people getting back: " + c.answerToQuestionOne(result));
     }
 }

@@ -44,8 +44,18 @@ public class CoatExperimentSimulator {
         return res;
     }
 
+    /*
+    Method: given the results array, compute the probability that 0 people get their coats back
+     */
     public double answerToQuestionOne(int[] results) {
-        return 0.0;
+        int zeroCount = 0;
+        double res = 0.0;
+        for (int i = 0; i < results.length; i++) {
+            if (results[i] == 0) {
+                zeroCount++;
+            }
+        }
+        return zeroCount / (double)results.length;
     }
 
     public double answerToQuestionTwo(int[] results) {
