@@ -20,7 +20,6 @@ public class Needle {
                 hits++;
             }
         }
-        System.out.println(hits);
         return (double)totalDrops / hits;
 
     }

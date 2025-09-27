@@ -69,10 +69,6 @@ public class CoatExperimentSimulator {
         return sum / (double) results.length;
     }
 
-
-    public static void main(String[] args) {
-
-    }
 }
 
 

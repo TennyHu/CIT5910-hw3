@@ -19,11 +19,9 @@ public class PositiveInteger {
         for (int i = 1; i * i <= num; i++) {
             if (num % i == 0) { // i is a factor of num
                 sum += i;
-//                System.out.println("factor is: " + i);
                 if (i != num / i && num != num / i) {
                     // if i is a factor, num / i is also a factor
                     sum += num / i;
-//                    System.out.println("factor is: " + num/i);
                 }
             }
         }
@@ -47,8 +45,6 @@ public class PositiveInteger {
      */
     public boolean isAbundant() {
         int sum = getSum();
-//        System.out.println(sum);
-
         if (sum > num) {
             return true;
         } else {
@@ -75,12 +71,10 @@ public class PositiveInteger {
         }
 
         for (int i = 0; i < list.size(); i++) {
-//            System.out.println("this is our individual number: " + list.get(i));
             // compute the sum
             sum += Math.pow(list.get(i), count);
         }
 
-//        System.out.println("This is count: " + count);
         if (sum == num) {
             return true;
         } else {
